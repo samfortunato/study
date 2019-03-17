@@ -45,3 +45,13 @@ def check_bit_4(binary):
   else:
     return 'off'
 
+number = 0b110
+mask = 0b1
+
+bit_one_turned_on = number | mask
+
+def flip_bit(number, nth_bit):
+  flip_mask = 0b1 << nth_bit - 1
+  flipped_bits = number ^ flip_mask
+
+  return bin(flipped_bits)
