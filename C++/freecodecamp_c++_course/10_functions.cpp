@@ -7,6 +7,8 @@ void saySup(string name, int age);
 int main()
 {
   saySup("dingo", 50);
+  saySup("broming", 1020);
+  saySup("shingo", 12);
   
   return 0;
 }
