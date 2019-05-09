@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using ConstructorsLesson.Book;
-
 namespace ConstructorsLesson
 {
   class Program
@@ -26,6 +24,20 @@ namespace ConstructorsLesson
 
       Console.WriteLine(lordOfTheRings.title);
       Console.WriteLine(playboyIssueOne.author);
+    }
+  }
+
+  class Book
+  {
+    public string title;
+    public string author;
+    public int numPages;
+
+    public Book(string aTitle, string aAuthor, int aNumPages)
+    {
+      title = aTitle;
+      author = aAuthor;
+      numPages = aNumPages;
     }
   }
 }
