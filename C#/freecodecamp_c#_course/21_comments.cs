@@ -10,7 +10,15 @@ namespace Comments
   {
     static void Main(string[] args)
     {
+      // single line comment
+      /* multi
+         line
+         comment
+      */
       
+      Console.WriteLine("Comments");
+
+      // Console.WriteLine("Fuck you");
     }
   }
 }
