@@ -1,0 +1,11 @@
+const num1 = 42;
+const string1 = 'hello';
+const boolean1 = true;
+const obj1 = { prop1: 'hello' };
+const null1 = null;
+const undefined1 = undefined;
+const symbol1 = Symbol('sup');
+// const bigInt1: bigint = 1000000000000n;
+let any1 = 'hello';
+any1 = 2;
+const strToNum = parseInt('5');
