@@ -1,3 +1,4 @@
 *.txt
 *.jpg
 *.gz
+node_modules/

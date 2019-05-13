@@ -1,0 +1,19 @@
+{
+  "name": "freecodecamp_nodejs_tutorial",
+  "version": "1.0.0",
+  "description": "freeCodeCamp Node.js tutorial",
+  "main": "01_modules.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sup",
+    "dude"
+  ],
+  "author": "Sam Fortunato",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
+  }
+}
