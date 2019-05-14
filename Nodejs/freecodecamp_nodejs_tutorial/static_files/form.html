@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+</head>
+<body>
+  <form id="form-example" action="/" method="POST">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" value="">
+
+    <label for="password">Password</label>
+    <input id="name" type="password" name="password" value="">
+
+    <input type="submit">
+  </form>
+
+  <script>
+    function formDataToJSON(form) {
+      const formData = new FormData(form);
+      let formDataJSON = {};
+
+      formData.forEach((value, key) => {
+        formDataJSON[key] = value;
+      });
+
+      return JSON.stringify(formDataJSON);
+    }
+    
+    const form = document.querySelector('#form-example');
+
+    form.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+
+      const formData = formDataToJSON(form);
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: formData
+      })
+        .then((res) => console.log(res));
+    });
+  </script>
+</body>
+</html>
