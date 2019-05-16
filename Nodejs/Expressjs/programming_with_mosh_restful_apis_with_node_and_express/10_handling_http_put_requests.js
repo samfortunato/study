@@ -15,11 +15,9 @@ const COURSES = [
 // helper functions ---
 
 function validateCourse(requestBody) {
-  const courseSchema = {
-    name: Joi.string().min(3).required(),
-  };
-
-  return Joi.validate(requestBody, courseSchema);
+  return Joi.validate(requestBody, {
+    name: Joi.string().min(3).required()
+  });
 }
 
 // --------------------
