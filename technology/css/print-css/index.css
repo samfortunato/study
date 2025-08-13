@@ -1,0 +1,10 @@
+@page :first {
+  margin: 3in;
+}
+
+@page {
+  margin: 1in;
+
+  size: letter;
+  marks: crop cross;
+}

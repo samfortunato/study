@@ -1,0 +1,19 @@
+.pad-left {
+  padding-left: 0.5rem;
+}
+
+.well li {
+  color: #d1d1d1;
+}
+
+.thumbnail {
+  min-height: 230px;
+}
+
+.green {
+  color: greenyellow !important;
+}
+
+.bold {
+  font-weight: bold;
+}
